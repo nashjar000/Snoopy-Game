@@ -7,13 +7,13 @@ canvas.height = window.innerHeight;
 
 // Load images
 const characterImg = new Image();
-characterImg.src = './pictures/snoopy.jpg'; // Replace with your character image path
+characterImg.src = './pictures/Halloween Snoopy.jpg'; // Replace with your character image path
 
 const goodObjectImg = new Image();
 goodObjectImg.src = './pictures/bone.png'; // Replace with your good object image path
 
 const badObjectImg = new Image();
-badObjectImg.src = './pictures/dog_house.jpg'; // Replace with your bad object image path
+badObjectImg.src = './pictures/pumpkin.png'; // Replace with your bad object image path
 
 // Game variables
 let score = 0;

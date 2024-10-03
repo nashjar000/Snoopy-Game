@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-image: url('pictures/charlie_borwn_pumpkin_patch.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#gameCanvas {
+    display: block;
+    margin: 0 auto;
+    background-color: transparent; /* Make canvas background transparent to show body image */
+}
+
+#scoreBoard {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#title {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    font-size: 48px;
+    font-family: 'Peanuts','Comic Neue', cursive;
+    color: darkorange;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#instructions {
+    position: absolute;
+    text-align: center;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000000;
+}

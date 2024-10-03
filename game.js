@@ -55,6 +55,36 @@ function drawCharacter() {
     ctx.restore();
 }
 
+function handleTouchMove(e) {
+    const currentX = e.touches[0].clientX;
+    if (touchX === null) {
+        touchX = currentX;
+    }
+
+    const deltaX = currentX - touchX;
+
+    // Move the character
+    character.x += deltaX * 0.7; // Adjust speed of movement
+
+    // Determine if character is facing left or right
+    if (deltaX < 0) {
+        characterFacingLeft = true;
+    } else if (deltaX > 0) {
+        characterFacingLeft = false;
+    }
+
+    touchX = currentX;
+
+    // Boundary detection
+    if (character.x < 0) {
+        character.x = 0;
+    }
+    if (character.x + character.width > canvas.width) {
+        character.x = canvas.width - character.width;
+    }
+}
+
+
 function drawObjects() {
     objects.forEach(obj => {
         if (obj.type === 'good') {
